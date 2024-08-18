@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU | Samurai  </title>
+    <meta name="description" content="Welcome to Samurai, a Japanese restaurant in Sihanoukville. We offer authentic Japanese cuisine crafted by skilled chefs. Whether you crave sushi, sashimi, or ramen, Samurai promises an unforgettable culinary experience.">
+    <meta name ="author" content="Samurai">
+    <link rel="stylesheet" href="style/menu.css">
+</head>
+
+<body>
+<!-- HEADER -->
+    <header class="header">
+        <div class="section menu-icons" id="menu">
+            <div class="menu-icon">&#9776;</div>
+            <nav class="menu-dropdown" >
+                <a href="index.html"target="_blank">
+                    <img src="icon/home.svg" alt="home" class="small-icon" ></a>
+                <a href="menu.html"target="_blank">
+                    <img src="icon/menu.svg" alt="menu" class="small-icon"></a>
+                <a href="contact.html"target="_blank">
+                    <img src="icon/notepad.svg"  alt="contact" class="small-icon"></a>
+                <a href="https://takeaway.e-gets.com/shop?shop_id=7286&region_code=16908544&s_id=4&share=1&lang=en_us&media_type=TG" target="_blank">
+                    <img src="icon/cart.svg" alt="blog" class="small-icon"></a>
+            </nav>
+        </div>
+
+        <div class="section social-icons">
+            <a href="https://www.facebook.com/samurai.shv" target="_blank">
+                <img src="icon/facebook.svg" alt="Facebook"></a>
+
+            <a href="https://t.me/+855885044515" target="_blank">
+                <img src="icon/telegram.svg" alt="Telegram"></a>
+        </div>
+        <div class="section logo">
+            <img src="icon/samurai-logo.png" alt="Logo"></div>
+    </header>
+
+<!-- MAIN -->
+    <main>
+        <!-- CIRCLES -->
+        <section class = "specials">
+            <div id = "special1">
+                <img src="image/salmon aburi.jpg" alt="soba">
+            </div>
+
+            <div id = "special1">
+                <img src="image/vegetable tempura.jpg" alt="soba">
+            </div>
+
+            <div id = "special1">
+                <img src="image/sesame roll.jpg" alt="soba">
+            </div>
+        </section>
+
+        <!-- SECTION FULL MENU BANNER -->
+        <section class="fullmenu">
+            <div class="menuset">
+                <img src="image/set1.jpg" alt="set 1" style="width:100%">
+            </div>
+        
+            <div class="linkhere">
+                <p>MENU BELOW</p>
+                <img src="icon/arrow.gif" alt="Description of GIF" style="width:3%">
+            </div>
+        
+            <div class="menuset">
+                <img src="image/set2.jpg" alt="set 2" style="width:100%">
+            </div>
+        </section>
+        <!-- pdf menu -->
+
+        <section class="pdfmenu">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'Regular')" id="defaultOpen">Regular Menu</button>
+                <button class="tablinks" onclick="openCity(event, 'Lunch')">Lunch Menu</button>
+                <button class="tablinks" onclick="openCity(event, 'Special')">Special Menu</button>
+            </div>
+        
+            <div id="Regular" class="tabcontent">
+                <iframe src="https://drive.google.com/file/d/1kjVe8-qSVIbWVxOPH3MefEnA0Wg4H_jO/preview" width="100%" height="600px"></iframe>
+            </div>
+        
+            <div id="Lunch" class="tabcontent">
+                <iframe src="https://drive.google.com/file/d/1WhGyMhKv_2Let4ouqCo9EdVOUALMz-vy/preview" width="100%" height="600px"></iframe>
+            </div>
+        
+            <div id="Special" class="tabcontent">
+                <h3>No Specials This Time</h3>
+            </div>
+        </section>
+
+        <section class="samuraiext">
+            <img src="https://images.unsplash.com/photo-1718282004445-e508545ee876?q=80&w=1951&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="exterior">
+        </section>
+    </main>
+
+<!-- FOOTER -->
+    <footer>
+        <section class = "footer1">
+            <!-- has three divisions: address, logo and social icons + telegram -->
+            <div class ="addresshere">
+                <p>190 Ekereach<br>Sihanoukville, Cambodia 18000</p></div>
+            
+            <div class = "logohere">
+                <img src="icon/samurai-logo.png" alt="company logo" class="mainlogo"></div>
+
+            <div class = "socialhere">
+                <div id ="icon">
+                    <a href="https://www.facebook.com/samurai.shv" target="_blank">
+                <img src="icon/facebook.svg" alt="Facebook"></a>
+                
+                <a href="https://t.me/+855885044515" target="_blank">
+                <img src="icon/telegram.svg" alt="Telegram"></a></div>
+        </section>
+
+        <section class="copyright">
+            <p>©2024 ALL RIGHTS RESERVED</p>
+        </section>
+    </footer>
+    <script src="script/menu.js"></script>
+</body>
+</html>
