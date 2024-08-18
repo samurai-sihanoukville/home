@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icon" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 800 800">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M750,584.5l-50-25v-59.5c-.1-73.1-52.9-135.5-125-147.7v-52.3h-50v52.3c-72.1,12.2-124.9,74.6-125,147.7v59.5l-50,25v115.5h150v50h100v-50h150v-115.5ZM700,650h-300v-34.5l50-25v-90.5c0-55.2,44.8-100,100-100s100,44.8,100,100v90.5l50,25v34.5Z"/>
+  <path class="cls-1" d="M700,150c0-27.6-22.4-50-50-50h-100v-50h-50v50h-200v-50h-50v50h-100c-27.6,0-50,22.4-50,50v500c0,27.6,22.4,50,50,50h100v-50h-100V150h100v50h50v-50h200v50h50v-50h100v150h50v-150Z"/>
+  <rect id="_Transparent_Rectangle_" data-name=" Transparent Rectangle " class="cls-1" y="0" width="800" height="800"/>
+</svg>
