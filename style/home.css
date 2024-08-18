@@ -1,0 +1,557 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #E1A96C;
+    --accent1-color: #383838;
+    --accent2-color:  #580000;
+  
+    --heading-font: "Baskervville", serif;
+    --paragraph-font: "Urbanist", sans-serif;
+  
+    --nav-link-color: #ffffff;
+    --nav-hover-link-color: #E1A96C;
+    --nav-hover-background-color: #580000;
+}
+
+h1,h2,h3,h4,h5,p {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+    letter-spacing: 1pt;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 1.5);
+}
+
+
+/* header background + size */
+html,
+body {
+    background-color: rgb(30, 30, 30);
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER ------------------------------ */
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    z-index: 1;
+
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../image/samurai2.jpg");
+	background-size: cover;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.section {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+}
+
+.menu-icons {
+    position: relative;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.menu-dropdown {
+    margin: 10px;
+    display: inline-block;
+}
+
+.small-icon {
+    width: 5%;
+    max-width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.small-icon:hover {
+    transform: scale(1.2);
+}
+
+.menu-dropdown a {
+    list-style: none;
+    padding: 25px;
+}
+
+.menu-dropdown img {
+    max-width: 100px;
+}
+
+.social-icons {
+    animation: slideInFromLeft 1s ease-in forwards; 
+    transform: translateX(-100%)
+    
+}
+
+.social-icons a {
+    margin: 10px;
+}
+
+.social-icons img:hover{
+    transform: scale(1.2);
+}
+
+.logo {
+    animation: slideInFromRight 1s ease-in forwards;
+    transform: translateX(100%); 
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+
+.paragraph {
+    animation: slideInFromBottom 1s ease-in forwards; 
+    transform: translateY(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+.paragraph p {
+    margin: auto;
+    text-align: justify;
+}
+
+.section p {
+    font-size: 12pt;
+    line-height: 150%;
+    letter-spacing: 1pt;
+    padding: 0 30px;
+    max-width: 60%;
+}
+
+
+/* ★ END OF HEADER ★ */
+
+
+/* MAIN ----------------------------------------- */
+
+/* PORTRAITS */
+
+.portraits {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.title {
+    width: 10%;
+    text-align: center;
+    animation: slideInFromTop 1s ease-in forwards;
+    transform: translateY(-100%); 
+
+}
+
+.title h3 {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin: 0 auto;
+    font-size: 16pt;
+    letter-spacing: 5pt;
+    color:#E1A96C;
+}
+
+.portrait1 {
+    width: 30%;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInFromBottom 1s ease-in forwards;
+    opacity: 0; 
+    transform: translateY(20px); 
+}
+
+.portrait1 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 9 / 14;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    padding: 20px;
+}
+
+/* LANTERN SECTION */
+.lanterns {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    z-index: 1;
+    animation: fadeIn 1s ease-in forwards;
+    background-color: black;
+    padding: 50px;
+}
+
+.lanterns::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://images.unsplash.com/photo-1702182910051-2481e0a486fa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.lanterns h3, .lanterns p {
+    width: 70%;
+    padding: 20px;
+    line-height: 150%;
+    text-align: justify;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 1.5);
+}
+
+.lanterns h3 {
+    font-size: 16pt;
+    text-align: center;
+}
+
+.lanterns p {
+    font-size: 11pt;
+}
+
+
+/* GALLERY */
+.gallery {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background: linear-gradient(to top, black, #580000);
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.2); 
+    animation: fadeInFromBottom 1s ease-in forwards; /* Apply the fadeInFromBottom animation */
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateY(20px); /* Start the header below the viewport */
+}
+
+.images {
+    display: flex;
+    width: 80%;
+}
+
+.images img {
+    display: none;
+    width: 100%;
+    height: auto;
+    box-shadow: 8px 10px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+
+/* FOOTER */
+
+.footer1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.addresshere {
+    flex: 1;
+    text-align: left;
+}
+
+.logohere {
+    flex: 1;
+    text-align: center;
+}
+
+.mainlogo {
+    max-width: 30%; /* Optional: set a max-width for larger screens */
+    padding: 10px;
+}
+
+.socialhere {
+    flex: 1;
+    text-align: right;
+}
+
+
+#icon {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.socialicon {
+    padding:10px;
+    max-width: 100%; /* Optional: set a max-width for larger screens */
+    transition: transform 0.3s ease;
+}
+
+#icon img:hover{
+    transform: scale(1.2) 
+}
+
+
+.copyright {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.copyright p {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 10pt;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/* MOBILE VIEW */
+
+/* header  mobile view */
+
+@media (max-width: 768px) {
+    .header {
+        background-position: center; 
+        background-size: cover;
+    }
+
+    .header::before {
+        background-position: center; 
+        background-size: cover;
+    }
+    
+    .small-icon {
+        width: 7%;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .menu-dropdown {
+        display: none;
+    }
+    .menu-dropdown.active {
+        display: block;
+    }
+
+    /* ----- */
+    .section p {
+        font-size: 8pt;
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .portraits {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    .title h3 {
+        writing-mode: horizontal-tb;
+        transform: rotate(0);
+        margin-bottom: 20px;
+        font-size: 8pt;
+        padding-top: 20px;
+        letter-spacing: 2pt;
+    }
+
+    .portrait1 {
+        width: 80%; /* Adjust as necessary for mobile view */
+        padding: 10px 0;
+    }
+
+    .portrait1 img {
+        width: 100%;
+        aspect-ratio: 2 / 2;
+    }
+        
+    .lanterns {
+        padding: 10px;
+    }
+
+    .lanterns h3, .lanterns p {
+        width: 80%;
+        padding: 20px
+    }
+
+    .lanterns h3 {
+        font-size: 10pt; /* Smaller font size for mobile view */
+    }
+
+    .lanterns p {
+        font-size: 8pt; /* Smaller font size for mobile view */
+    }
+
+    .gallery {
+        padding: 40px;
+    }
+
+    /* FOOOTER */
+    .footer1 {
+        padding: 10px;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .addresshere p{
+        font-size: 8pt;
+    }
+    
+    .logohere {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .mainlogo {
+        max-width: 50%;
+        padding: 10px;
+    }
+    
+    
+    .socialhere {
+        padding:5px;
+        max-width: 30%; 
+    }
+    
+    .copyright p {
+        font-size: 7pt;
+        letter-spacing: 1.2pt;
+    }
+}
+
+/* ANIMATION KEYFRAMES */
+@keyframes fadeInFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  
+  @keyframes fadeIn {
+      from {
+          opacity: 0; 
+      }
+      to {
+          opacity: 0.7; 
+      }
+  }
+  
+  @keyframes slideInFromTop {
+      from {
+          transform: translateY(-100%); 
+      }
+      to {
+          transform: translateY(0); 
+      }
+  }
+  
+  @keyframes slideInFromBottom {
+      from {
+          transform: translateY(100%); 
+      }
+      to {
+          transform: translateY(0); 
+      }
+  }
+  
+  @keyframes slideInFromRight {
+      from {
+          transform: translateX(100%);
+      }
+      to {
+          transform: translateX(0); 
+      }
+  }
+  
+  @keyframes slideInFromLeft {
+      from {
+          transform: translateX(-100%); 
+      }
+      to {
+          transform: translateX(0);
+      }
+  }
+  
+  @keyframes fadeInFromBottom {
+      from {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+      to {
+          opacity: 1; 
+          transform: translateY(0); 
+      }
+  }
+  
+  @keyframes fadeInFromLeft {
+      from {
+          opacity: 0;
+          transform: translateX(-20px); 
+      }
+      to {
+          opacity: 1;
+          transform: translateX(0);
+      }
+  }
